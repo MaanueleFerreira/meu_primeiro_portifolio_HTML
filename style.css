@@ -29,7 +29,7 @@ header {
 /*seria necessario colocar esse bloco? */
 .iconesmenu {
     color: #1A1A1A;
-    margin: 0 1vh;
+    margin: 0 .5vh;
     align-items: end;
     justify-content: end;  
 }
@@ -100,6 +100,7 @@ main {
 
 }
 
+/*não consigo desprender essa div do footer */
 .div-abaixo {
     width: 90vw;
     height: 30vh;
@@ -148,7 +149,10 @@ footer {
 
 }
 
+/*não consigo afastar mais os icons*/
 .redes-sociais {
   margin: 0 5vw;
+  align-items: end;
+  justify-content: end;  
 }
 
