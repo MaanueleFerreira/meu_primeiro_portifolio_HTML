@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/* configurações espaço do head*/
 header {
     width: 100vw;
     height: 10vh;
@@ -13,82 +14,96 @@ header {
     background-color: #B76FB6;
     color: #1A1A1A;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Abril Fatface', serif;
 }
 
+/*edição do cabeçalho*/
 .icone {
-    margin: 0 3vh ;
+    margin: 0 5vh ;
 }   
 
-/* ajeitar posição para o canto*/
-.container-icons-menu {
+.nome-do-site {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.icons-menu {
     margin-left: 80px;
+    display: flex;
+    flex-direction: row;
     justify-content: end;
 }
 
-/*seria necessario colocar esse bloco? */
 .iconesmenu {
-    color: #1A1A1A;
-    margin: 0 .5vh;
+    margin: 0 1vh;
     align-items: end;
     justify-content: end;  
 }
+/*fim configuração do head*/
 
+/* >>>> inicio configuração do body <<<< */
 main {
     width: 100vw;
-    height: 100vh;
     background-color: #f7f7f7;
 }
 
-
-.saudacao {
-    margin: 60px ;
-    font-family: 'Abril Fatface', serif;
-}
-
-.apresentacao {
-    margin-left: 10px;
-    margin-top: -50px;
-    font-family: 'Abril Fatface', serif;
-    
-
-}
-
-.container {
+.inicio-reparticoes {
     display: flex;
     justify-content: space-evenly;
-    padding: 20vh 0;
+    padding: 15vh 0vh;
+    margin-bottom: -50px;
 }
 
+.incio-boasvindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.inicio-saudacao {
+    margin: 60px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 40px;
+}
+
+.inicio-apresentacao {
+    margin-top: -60px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
 .div-esquerda {
-    width: 600px;
-    height: 40vh;
+    width: 400px;
 
     background-color: #dcdcdc;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
     border-radius: 5vh;
-    
-
 }
 
 .titulo-sobre-mim {
     font-family: 'Abril Fatface', serif;
+    font-size: 22px;
+    font-weight: 400;
 }
 
-/*queria diminuir essa fonte*/
 .descricao-sobremim {
     text-align: justify;
     margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    font-size: 12px;
 }
 
 .div-direita {
@@ -99,81 +114,102 @@ main {
     align-items: center;
     
     background-color:#dcdcdc;
-    border-radius: 60%;
-}
-
-.mensagem-fofa {
-    margin-top: 1px;
-    color: #959494;
+    border-radius: 20%;
 }
 
 .imagem-perfil {
     display: flex;
-    margin: auto;
-    margin-top: -20px;
     align-items: center;
-
+    margin-top: -20px;
 }
 
-/*não consigo desprender essa div do footer */
+.descricao-foto {
+    color: #959494;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:9px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+
 .div-abaixo {
     width: 90vw;
-    height: 30vh;
-    
-    
+     
     background-color: #dcdcdc;
     border-radius: 20px;
     
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: flex;
     justify-content:space-around;
-    
 }
 
 .titulo-lista {
     margin-left: -10px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tipo-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descricao-qualidades {
+    margin-bottom: 3.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 .titulo-tecnologias {
     margin-top: 30px;
-    margin-bottom: 5px;
-    margin-left: 17px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     font-family: 'Abril Fatface', serif;
-}
-
-.li {
-    margin-top: -20px;
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .icone-tecnologias {
     justify-items: center;
     padding: 2px;
+    margin-bottom: 15px;
 }
 
 footer {
     width: 100vw;
-    height: 18vh;
+    height: 15vh;
     background-color: #b76fb6;
-
+    
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .texto {
-    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+    margin-top: 10px;
     margin-bottom: 10px;
-
+    align-items: center;
 }
 
-/*não consigo afastar mais os icons*/
+
 .redes-sociais {
-  margin: 0 5vw;
-  align-items: end;
-  justify-content: end;  
+    padding: 10px;
+    align-items: center;
+    justify-content: center;  
+}
+
+.agradecimento {
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
 }
 
